@@ -1,0 +1,573 @@
+/* =========================
+   ROOT COLORS (THEME)
+========================= */
+:root {
+    --primary: #0a2540;
+    --secondary: #f4a261;
+    --light: #f8f9fa;
+    --dark: #1b1b1b;
+}
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.custom-navbar {
+    background-color: #ffffff !important;
+    padding: 6px 0;
+}
+
+.navbar-brand img {
+    height: 38px;
+}
+
+.navbar-nav .nav-link {
+    padding: 6px 10px;
+}
+
+.navbar-brand span {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.grey-bg {
+    background-color: #f2eee8d5; 
+}
+
+/* Navbar text color (blue) */
+.nav-blue {
+    color: #0d3b66 !important;
+    font-weight: 500;
+}
+
+/* Hover effect */
+.nav-blue:hover {
+    color: #f4a261 !important;
+}
+
+/* Active link */
+.nav-blue.active {
+    color: #0d3b66 !important;
+    font-weight: 600;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    height: 90vh;
+    background:  url('hero.png') no-repeat center center/cover;
+    position: relative;
+}
+
+/* Dark overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Content above overlay */
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+.about p {
+    max-width: 600px;
+    margin: auto;
+}
+//* 🔥 CEO SECTION (BLUE THEME LIKE PDF) */
+.ceo-box {
+    background-color: #0d3b66;   /* dark blue */
+    color: #1661b1;              /* white text */
+    border-radius: 8px;
+    position: relative;
+    transition: 0.3s;
+}
+
+
+.ceo-box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 80%;
+    width: 6px;
+    background-color: #1a4670;
+    border-radius: 8px 0 0 8px;
+}
+
+/* Headings inside CEO box */
+.ceo-box h3,
+.ceo-box h6 {
+    color: #2764c1;
+}
+
+/* Slight hover */
+.ceo-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+/* =========================
+   PRODUCT CARDS
+========================= */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(237, 157, 36, 0.2);
+}
+
+/* Fix image size */
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+.why-us .shadow-sm {
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.why-us .shadow-sm:hover {
+    transform: scale(1.05);
+    background-color: var(--secondary);
+}
+
+/* =========================
+   CLIENTS
+========================= */
+/* CLIENT BOX (fixed size container) */
+.client-box {
+    height: 100px;              /* same box size */
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+/* LOGO IMAGE (important part) */
+.client-box img {
+    max-height: 70px;           /* controls logo size */
+    max-width: 80%;
+    object-fit:cover;        /* keeps original ratio */
+}
+
+/* hover */
+.client-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+@media (min-width: 768px) {
+    .custom-5 {
+        width: 20%;
+    }
+}
+/* =========================
+   CONTACT FORM
+========================= */
+form input,
+form textarea {
+    border-radius: 5px;
+}
+
+form button {
+    background-color: var(--secondary);
+    border: none;
+}
+
+form button:hover {
+    background-color: #e76f51;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn-primary {
+    background-color: var(--secondary);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #e76f51;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: var(--dark);
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+/* Mission & Vision */
+.mission-box, .vision-box {
+    background-color: #0d3b66;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    transition: 0.3s;
+}
+.orange-bg{
+    background-color: #ef9a54;
+}
+.mission-box::before, .vision-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #f3994f;
+}
+
+.mission-box:hover, .vision-box:hover {
+    transform: translateY(-8px);
+}
+
+/* Core Values Hover */
+/* Core Values - Dark Blue Style */
+.value-box {
+    background-color: #0d3b66; /* dark blue */
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+    height:150px;
+}
+
+/* Hover Effect */
+.value-box:hover {
+    background-color: #071f41; /* orange on hover */
+    color: white;
+    transform: scale(1.05);
+}
+.blue-bg{
+    background-color: #1a4670;
+}
+/* Category Cards */
+.category-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.category-card img {
+    height: 220px;
+    object-fit: cover;
+}
+/* Product Cards */
+.product-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+/* ⚪ White Cards */
+.product-card {
+    background-color: #ffffff;
+    color: #1b1b1b;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s;
+}
+
+/* Text inside card */
+.product-card h5,
+.product-card h6,
+.product-card p,
+.product-card li {
+    color: #1b1b1b;
+}
+
+/* Image */
+/* PRODUCT IMAGE FIX */
+/* Reduce overall card size */
+.product-card {
+    padding: 10px !important;   /* less space inside */
+    border-radius: 10px;
+    max-width:480px;
+    margin:auto;
+}
+
+/* Reduce image box height */
+.img-box {
+    height: 110px;              /* was 160px → now compact */
+    padding: 10px;
+}
+
+/* Reduce image size slightly */
+.img-box img {
+    max-height: 90%;
+}
+
+/* Reduce text size */
+.product-card h5 {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+}
+
+.product-card p {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+/* Reduce spacing inside card */
+.product-card .card-body {
+    padding: 10px;
+}
+.product-card img {
+    width: 100%;
+    height: 180px;        /* fixed container height */
+    object-fit: contain;  /* 🔥 THIS is the fix */
+    background: #ffffff;  /* fills empty space nicely */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* HOVER */
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Orange accent line */
+.product-card::before {
+    content: "";
+    display: block;
+    height: 6px;
+    background-color: #f4a261;
+    border-radius: 10px 10px 0 0;
+}
+/* Contact Boxes */
+.contact-box {
+    background-color: #0d3b66;
+    color: white;
+    border-radius: 10px;
+}
+
+.form-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+/* Button */
+.btn-primary {
+    background-color: #ed9a57;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #e76f51;
+}
+
+/* container */
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 1000;
+}
+
+/* common style */
+.floating-buttons a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 22px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+/* call button */
+.call-float {
+    background: #031f38; /* blue */
+}
+
+.call-float:hover {
+    background: #031b2f;
+    transform: scale(1.1);
+}
+
+/* whatsapp button */
+.whatsapp-float {
+    background: #25D366;
+}
+
+.whatsapp-float:hover {
+    background: #1ebe5d;
+    transform: scale(1.1);
+}
+/* 🔥 PREMIUM BLUE CARDS */
+.app-card {
+    background: #0d3b66; /* base blue */
+    color: white;
+    padding: 25px;
+    border-radius: 16px; /* smooth curve */
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* heading */
+.app-card h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* paragraph */
+.app-card p {
+    font-size: 0.9rem;
+    color: #e0e0e0;
+}
+
+/* 🔥 HOVER EFFECT (darker blue + lift) */
+.app-card:hover {
+    background: #082c4a; /* darker blue */
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+.contact-box {
+    background: #e4e8ef;
+    color: #000;
+
+}
+
+.contact-box a {
+    color: #0d3b66;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+/* call hover*/
+.phone-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.phone-number {
+    text-decoration: none;
+    color: #1b4368;
+    font-weight: 500;
+}
+
+.phone-number:hover {
+    text-decoration: underline;
+}
+
+/* Copy button */
+.copy-btn {
+    border: none;
+    background: #f4a261;
+    color: white;
+    padding: 2px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.copy-btn:hover {
+    background: #e76f51;
+}
+.copy-text {
+    font-size: 12px;
+    color: green;
+    margin-left: 5px;
+    display: none;
+}
+/* flameproof*/
+.product-card img {
+    height: 200px;
+    object-fit: contain;
+}
+
+.feature-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    transition: 0.3s;
+}
+
+.feature-box:hover {
+    background: #0b3d6d;
+    color: white;
+}
