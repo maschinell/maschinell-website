@@ -30,7 +30,7 @@ section {
 }
 
 .navbar-brand img {
-    height: 38px;
+    height: 34px;
 }
 
 .navbar-nav .nav-link {
@@ -61,100 +61,444 @@ section {
     color: #0d3b66 !important;
     font-weight: 600;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header, nav {
+  margin-bottom: 0;
+}
+
+.hero {
+  margin-top: 0;
+  margin-top: -10px; /* slight adjust */
+}
+.navbar {
+  margin-bottom: 0 !important;
+}
+
+.hero {
+  padding-top:6px;
+}
 
 /* =========================
    HERO SECTION
 ========================= */
-.hero {
-    height: 90vh;
-    background:  url('images/hero.png') no-repeat center center/cover;
-    position: relative;
-}
-.hero img {
-    background: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-.schneider-badge {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255,255,255,0.3);
-    backdrop-filter: blur(8px);
-    border-radius: 50px;
-    color: #fff;
-    font-weight: 600;
-    font-size: 16px;
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.schneider-badge img {
-    height: 32px;
-    background: #fff;
-    padding: 4px 8px;
-    border-radius: 4px;
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;   /* 🔥 no fade */
 }
 
-/* Dark overlay */
-.hero::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+.slide.active {
+  display: block;
 }
 
-/* Content above overlay */
-.hero .container {
-    position: relative;
-    z-index: 2;
+.slide.active {
+  opacity: 1;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    font-weight: bold;
+/* 🔥 HALF DARK OVERLAY */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;   /* ONLY HALF DARK */
+  height: 100%;
+
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.3),
+    transparent
+  );
 }
 
-.hero p {
-    font-size: 1.2rem;
+/* TEXT AREA */
+.content {
+  position: absolute;
+  top: 40%;
+  left: 3%;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 500px;
+}
+
+.content h1 {
+  font-size: 3rem;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
 
 /* =========================
+   slider
+========================= */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* =========================
+   HOME PRODUCT CARDS
+========================= */
+
+/* equal height */
+.products .row > [class*='col-'] {
+  display: flex;
+}
+
+/* card */
+.home-product-card {
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+/* hover */
+.home-product-card:hover {
+  transform: translateY(-8px);
+}
+
+/* image */
+.home-product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* body */
+.home-product-card .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding:20px;
+}
+
+/* title */
+.home-product-card h5 {
+  margin-bottom: 20px;
+}
+
+/* button */
+.home-product-card .btn {
+  margin-top: auto;
+}
+/* =========================
    ABOUT SECTION
 ========================= */
-.about p {
-    max-width: 600px;
-    margin: auto;
+
+body {
+  margin: 0;
+  padding: 0;
 }
-//* 🔥 CEO SECTION (BLUE THEME LIKE PDF) */
-.ceo-box {
-    background-color: #0d3b66;   /* dark blue */
-    color: #1661b1;              /* white text */
-    border-radius: 8px;
-    position: relative;
+
+.navbar {
+  margin-bottom: 0 !important;
+}
+
+/* =========================
+   ABOUT HERO (CLEAN)
+========================= */
+.about-hero {
+  height: 60vh; /* half screen feel */
+  display: flex;
+  align-items: center;
+}
+
+.about-hero-inner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-img-box {
+  flex: 1;
+  height: 100%;
+}
+
+.hero-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* IMPORTANT */
+}
+
+.hero-text-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  background: #f5f7fa;
+}
+
+/* text */
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-img {
+    width: 100%;
+  }
+
+  .about-img img {
+    height: 200px;
+  }
+}
+
+
+/* =========================
+   LEADERSHIP (FINAL CLEAN)
+========================= */
+
+/* equal height columns */
+.row > [class*='col-'] {
+  display: flex;
+}
+
+/* card */
+.leader-card {
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;   /* 🔥 image top */
+  align-items: center;
+  text-align: center;
+
+  height: 100%;             /* equal height */
+  min-height: 320px;        /* 🔥 same size guarantee */
+}
+
+/* hover */
+.leader-card:hover {
+  transform: translateY(-6px);
+}
+
+/* image (TOP, bigger, clean) */
+.leader-img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* content */
+.leader-content h4 {
+  margin-bottom: 5px;
+}
+
+.leader-content span {
+  font-size: 14px;
+  color: #777;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.leader-content p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .leader-card {
+    min-height: auto;
+  }
+}
+/* =========================
+   MISSION & VISION (FIXED)
+========================= */
+
+/* equal height columns */
+.row > [class*='col-'] {
+  display: flex;
+}
+
+/* box */
+.mission-box,
+.vision-box {
+  width: 100%;
+  background-color: #0d3b66;
+  color: white;
+  border-radius: 10px;
+  padding: 25px;
+  position: relative;
+  transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  height: 100%;           /* 🔥 equal height */
+  min-height: 180px;      /* 🔥 same size guarantee */
+}
+
+/* top line */
+.mission-box::before,
+.vision-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background-color: #f3994f;
+  border-radius: 10px 10px 0 0;
+}
+
+/* hover */
+.mission-box:hover,
+.vision-box:hover {
+  transform: translateY(-8px);
+}
+
+/* text */
+.mission-box h3,
+.vision-box h3 {
+  margin-bottom: 10px;
+}
+
+.mission-box p,
+.vision-box p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .mission-box,
+  .vision-box {
+    min-height: auto;
+  }
+}
+/* Core Values Hover */
+/* Core Values - Dark Blue Style */
+.value-box {
+    background-color: #0d3b66; /* dark blue */
+    color: white;
+    border-radius: 10px;
     transition: 0.3s;
+    height:150px;
 }
 
-
-.ceo-box::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 80%;
-    width: 6px;
+/* Hover Effect */
+.value-box:hover {
+    background-color: #071f41; /* orange on hover */
+    color: white;
+    transform: scale(1.05);
+}
+.blue-bg{
     background-color: #1a4670;
-    border-radius: 8px 0 0 8px;
 }
 
-/* Headings inside CEO box */
-.ceo-box h3,
-.ceo-box h6 {
-    color: #2764c1;
+/* =========================
+   INDUSTRY SLIDER FIX
+========================= */
+.slider-wrapper {
+  position: relative;
 }
 
-/* Slight hover */
-.ceo-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+.industry-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
 }
+
+.industry-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.industry-card {
+  min-width: 260px;
+  flex: 0 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.industry-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.industry-card:hover {
+  transform: scale(1.05);
+}
+
+/* buttons */
+.slide-btn {
+  position: absolute;
+  top: 40%;
+  background: #0a2540;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.left { left: -10px; }
+.right { right: -10px; }
 /* =========================
    PRODUCT CARDS
 ========================= */
@@ -175,20 +519,6 @@ section {
     height: 200px;
     object-fit: cover;
 }
-
-/* =========================
-   WHY CHOOSE US
-========================= */
-.why-us .shadow-sm {
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.why-us .shadow-sm:hover {
-    transform: scale(1.05);
-    background-color: var(--secondary);
-}
-
 /* =========================
    CLIENTS
 ========================= */
@@ -199,7 +529,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #ffffff;
+    background:#ffffff;
     border-radius: 8px;
     padding: 10px;
     overflow: hidden;
@@ -207,12 +537,10 @@ section {
 
 /* LOGO IMAGE (important part) */
 .client-box img {
-    max-height: 70px;           /* controls logo size */
+    max-height: 90px;           /* controls logo size */
     max-width: 80%;
-    object-fit:cover;        /* keeps original ratio */
+    object-fit:contain;       
 }
-
-/* hover */
 .client-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
@@ -270,50 +598,12 @@ footer {
         font-size: 1rem;
     }
 }
-/* Mission & Vision */
-.mission-box, .vision-box {
-    background-color: #0d3b66;
-    color: white;
-    border-radius: 10px;
-    position: relative;
-    transition: 0.3s;
-}
-.orange-bg{
-    background-color: #ef9a54;
-}
-.mission-box::before, .vision-box::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 5px;
-    width: 100%;
-    background-color: #f3994f;
+/*cards*/
+.card-img-top {
+    height: 200px;       /* fixed height */
+    object-fit: cover;   /* crops image nicely */
 }
 
-.mission-box:hover, .vision-box:hover {
-    transform: translateY(-8px);
-}
-
-/* Core Values Hover */
-/* Core Values - Dark Blue Style */
-.value-box {
-    background-color: #0d3b66; /* dark blue */
-    color: white;
-    border-radius: 10px;
-    transition: 0.3s;
-    height:150px;
-}
-
-/* Hover Effect */
-.value-box:hover {
-    background-color: #071f41; /* orange on hover */
-    color: white;
-    transform: scale(1.05);
-}
-.blue-bg{
-    background-color: #1a4670;
-}
 /* Category Cards */
 .category-card {
     border: none;

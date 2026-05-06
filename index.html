@@ -44,7 +44,6 @@
                 <li class="nav-item"><a class="nav-link nav-blue" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link nav-blue active" href="about.html">About</a></li>
                 <li class="nav-item"><a class="nav-link nav-blue" href="products.html">Products</a></li>
-                <li class="nav-item"><a class="nav-link nav-blue" href="lighting.html">Lighting</a></li>
                  <li class="nav-item"><a class="nav-link nav-blue" href="#">Projects</a></li>
                 <li class="nav-item"><a class="nav-link nav-blue" href="contact.html">Contact</a></li>
             </ul>
@@ -52,22 +51,49 @@
     </div>
 </nav>
 </header>
-<section class="hero d-flex align-items-center text-center text-white">
-    <div class="container">
-        <h1>Powering Industries with Reliable Electrical Solutions</h1>
+<section class="hero">
+  <div class="slider">
+   
+  <!-- Slide 1 
+  <div class="slide active">
+    <img src="images/hero3.png" alt="">
+    <div class="overlay"></div>
 
-        <!-- 🔥 PREMIUM BADGE -->
-        <div class="d-flex justify-content-center mt-4">
-            <div class="schneider-badge d-flex align-items-center gap-3 px-4 py-2">
-                <img src="images/schneider.png" alt="Schneider Electric">
-                <span>Authorized Distributor</span>
-            </div>
-        </div>
-
-        <p class="mt-4">
-            Trusted partner for industrial panels, switchgear, and lighting systems — delivering quality, safety, and performance.
-        </p>
+        <div class="content">
+      <h1>Not Just Products.</h1><br>
+      <h1> Reliable Solutions.</h1><br>
+      <h1> Real Results.</h1>
+    
     </div>
+     
+  </div>-->
+
+  <!-- Slide 2 -->
+  <div class="slide">
+    <img src="images/hero2.png" alt="">
+    <div class="overlay"></div>
+
+    <div class="content">
+      <h1>Industrial Panels & Switchgear</h1>
+      <p>High performance & reliable systems</p>
+    </div>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="slide active">
+    <img src="images/hero1.png" alt="">
+    <div class="overlay"></div>
+
+    <div class="content">
+ <h1>Authorized Distributor</h1>
+      <p>Delivering trusted industrial electrical solutions</p>
+    </div>
+    
+  </div>
+
+   <button class="prev" onclick="prevSlide()">❮</button>
+<button class="next" onclick="nextSlide()">❯</button>
+</div>
 </section>
 <section class="about py-5 grey-bg">
     <div class="container text-center">
@@ -82,7 +108,7 @@
         <div class="row g-4">
             <!-- Card 1 -->
             <div class="col-md-3 col-sm-6 mb-4">
-                <div class="card h-100">
+                <div class="home-product-card h-100">
                     <img src="images/electrical_pannel.webp" class="card-img-top" alt="Electrical Panels">
                     <div class="card-body text-center">
                         <h5>Electrical Panels</h5>
@@ -92,7 +118,7 @@
             </div> 
             <!-- Card 2 -->
             <div class="col-md-3 col-sm-6 mb-4">
-                <div class="card h-100">
+                <div class="home-product-card h-100">
                     <img src="images/Electrical-Switchgear.jpg" class="card-img-top" alt="Switchgear & Wires">
                     <div class="card-body text-center">
                         <h5>Switchgear & Wires</h5>
@@ -103,18 +129,18 @@
 
             <!-- Card 3 -->
             <div class="col-md-3 col-sm-6 mb-4">
-                <div class="card h-100">
-                    <img src="images/Industrial-Manufacturing.avif" class="card-img-top" alt="Industrial Equipment">
+                <div class="home-product-card h-100">
+                    <img src="images/hydraulicc.webp" class="card-img-top" alt="Hydraulic Equipment">
                     <div class="card-body text-center">
-                        <h5>Industrial Equipment</h5>
-                        <a href="industrial.html" class="btn btn-outline-primary">View More</a>
+                        <h5>Hydraulic Equipments</h5>
+                        <a href="hydraulic.html" class="btn btn-outline-primary">View More</a>
                     </div>
                 </div>
             </div>
 
             <!-- Card 4 -->
             <div class="col-md-3 col-sm-6 mb-4">
-                <div class="card h-100">
+                <div class="home-product-card h-100">
                     <img src="images/light.jpeg" class="card-img-top" alt="Lighting Solutions">
                     <div class="card-body text-center">
                         <h5>Lighting Solutions</h5>
@@ -126,36 +152,7 @@
         </div>
     </div>
 </section>
-<section class="why-us py-5 grey-bg">
-    <div class="container">
-        <h2 class="text-center">Why Choose Us</h2>
 
-   <div class="row text-center mt-4">
-    <div class="col-md-3">
-        <div class="p-3 shadow-sm">
-            <h5>⚙️ Quality Assurance</h5>
-        </div>
-    </div>
-
-    <div class="col-md-3">
-        <div class="p-3 shadow-sm">
-            <h5>🤝 Customer Centric</h5>
-        </div>
-    </div>
-
-    <div class="col-md-3">
-        <div class="p-3 shadow-sm">
-            <h5>🏭 Industry Expertise</h5>
-        </div>
-    </div>
-
-    <div class="col-md-3">
-        <div class="p-3 shadow-sm">
-            <h5>🛡 Integrity</h5>
-        </div>
-    </div>
-</div>
-</section>
 <section class="clients py-5 grey-bg">
     <div class="container text-center">
         <h2>Our Clients</h2>
@@ -177,19 +174,19 @@
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/bkt.jpg" alt="BKT">
+                    <img src="images/aditya_birla.jpg" alt="adtiya birla">
                 </div>
             </div>
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/tspl.jpeg" alt="TSPL">
+                    <img src="images/moglix.jpg" alt="moglix">
                 </div>
             </div>
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/swml.png" alt="SWML">
+                    <img src="images/vedanta.jpeg" alt="vedanta">
                 </div>
             </div>
 
@@ -201,7 +198,7 @@
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/moglix.jpg" alt="Moglix">
+                    <img src="images/century-pulp-paper-logo.png" alt="century">
                 </div>
             </div>
 
@@ -212,42 +209,42 @@
             </div>
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/jsw_cement.webp" alt="jsw cement">
+                    <img src="images/Hindustan-Copper-Limited-Logo.avif" alt="hindustan copper">
                 </div>
             </div>
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/jsw_energy.jpg" alt="jsw energy">
+                    <img src="images/tspl.jpeg" alt="tspl">
                 </div>
             </div>
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/sael.jpg" alt="sael">
+                    <img src="images/bkt.jpg" alt="bkt">
                 </div>
             </div>
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/Hindustan-Copper-Limited-Logo.avif" alt="hindustan copper limited">
+                    <img src="images/power_mech.jpeg" alt="power mech">
                 </div>
             </div>
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/aditya_birla.webp" alt="aditya birla">
+                    <img src="images/sael.jpg" alt="seal">
                 </div>
             </div>
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/vedanta.jpeg" alt="vedanta">
+                    <img src="images/seetkamal.png" alt="seetkamal">
                 </div>
             </div>
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/century-pulp-paper-logo.png" alt="century pulp and paper">
+                    <img src="images/swml.png" alt="swml">
                 </div>
             </div>
 
@@ -316,5 +313,48 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
 
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+/* show slide */
+function showSlide(i) {
+
+  /* remove active from all */
+  slides.forEach(slide => {
+    slide.classList.remove("active");
+  });
+
+  /* add active */
+  slides[i].classList.add("active");
+}
+
+/* next button */
+function nextSlide() {
+  index++;
+
+  if(index >= slides.length) {
+    index = 0;
+  }
+
+  showSlide(index);
+}
+
+/* previous button */
+function prevSlide() {
+  index--;
+
+  if(index < 0) {
+    index = slides.length - 1;
+  }
+
+  showSlide(index);
+}
+
+/* first slide */
+showSlide(index);
+
+</script>
 </body>
 </html>
