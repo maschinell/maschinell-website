@@ -874,26 +874,179 @@ footer {
 .phone-number:hover {
     text-decoration: underline;
 }
+/* =========================
+   CONTACT SECTION FIX
+========================= */
 
-/* Copy button */
+/* left + right same height */
+.contact-box {
+    height: 100%;
+}
+
+/* form box */
+.contact-form-box {
+    width: 100%;
+    background: #fff;
+
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+}
+
+/* input */
+.custom-input {
+    border-radius: 8px;
+    padding: 14px;
+    border: 1px solid #ddd;
+}
+
+/* remove blue glow */
+.custom-input:focus {
+    box-shadow: none;
+    border-color: #f4a261;
+}
+
+/* button */
+.custom-btn {
+    background: #f4a261;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.custom-btn:hover {
+    background: #e76f51;
+}
+
+/* mobile */
+@media(max-width:768px){
+
+    .contact-form-box{
+        margin-top:20px;
+    }
+
+}
+/* Copy icon button */
 .copy-btn {
     border: none;
     background: #f4a261;
     color: white;
-    padding: 2px 8px;
-    font-size: 12px;
-    border-radius: 4px;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
     cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
 }
 
+/* hover */
 .copy-btn:hover {
     background: #e76f51;
+    transform: scale(1.08);
 }
-.copy-text {
-    font-size: 12px;
-    color: green;
-    margin-left: 5px;
-    display: none;
+
+/* icon */
+.copy-btn i {
+    font-size: 14px;
+}
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+.why-choose-us {
+    background: #ecebe8;
+}
+
+/* heading */
+.section-heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0a2540;
+    margin-bottom: 10px;
+}
+
+.section-subtext {
+    color: #666;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* card */
+.why-card {
+    background: #ffffff;
+    padding: 35px 25px;
+    border-radius: 16px;
+    text-align: center;
+
+    height: 100%;
+
+    transition: 0.3s;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+/* hover */
+.why-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* icon */
+.why-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+    background: #0a2540;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* icon style */
+.why-icon i {
+    color: white;
+    font-size: 28px;
+}
+
+/* title */
+.why-card h5 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #0a2540;
+}
+
+/* text */
+.why-card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+
+    .section-heading {
+        font-size: 28px;
+    }
+
+    .why-card {
+        padding: 30px 20px;
+    }
+
 }
 /* flameproof*/
 .product-card img {
