@@ -15,59 +15,41 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Your CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- 🔵 NAVBAR (same as your other pages) -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!--UPDATED NAVBAR -->
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
     <div class="container">
-
         <a class="navbar-brand" href="index.html">
-            <img src="images/logo.jpeg" alt="Maschinell Logo">
+            <img src="images/logo.png" alt="Maschinell Logo">
         </a>
-
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse justify-content-center" id="nav">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link nav-blue" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link nav-blue active" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link nav-blue" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link nav-blue" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link nav-blue active" href="products.html">Products</a></li>
                  <li class="nav-item"><a class="nav-link nav-blue" href="#">Projects</a></li>
                 <li class="nav-item"><a class="nav-link nav-blue" href="contact.html">Contact</a></li>
             </ul>
         </div>
-
     </div>
 </nav>
-
-
-<!-- 🔵 HERO -->
-<section class="py-5 blue-bg text-white text-center">
+<!--HERO -->
+<section class="py-5 blue-bg text-green text-center">
     <div class="container">
         <h1>Flameproof / Explosion Proof Lighting</h1>
         <p>Reliable lighting solutions designed for hazardous industrial environments.</p>
     </div>
 </section>
-
-<!-- 🔵 ABOUT -->
-<section class="py-5 grey-bg">
-    <div class="container text-center">
-        <h2>About Flameproof Lighting</h2>
-        <p>
-            Flameproof lighting is specially engineered for industries where explosive gases,
-            dust, or chemicals are present. These lights prevent ignition and ensure maximum safety
-            while maintaining high performance.
-        </p>
-    </div>
-</section>
-
-<!-- 🔵 PRODUCTS -->
+<!--PRODUCTS -->
 <section class="py-5 blue-bg">
     <div class="container">
 
@@ -77,7 +59,7 @@
 
             <!-- CARD -->
             <div class="col-lg-4 col-md-6">
-                <div class="card product-card h-100 p-3">
+                <div class="card subproduct-card h-100 p-3">
                     <img src="images/explosion.png" alt="">
                     <div class="card-body">
                         <h5>Explosion Proof Flood Light</h5>
@@ -87,7 +69,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6">
-                <div class="card product-card h-100 p-3">
+                <div class="card subproduct-card h-100 p-3">
                     <img src="images/well-glass.jpg" alt="">
                     <div class="card-body">
                         <h5>Well Glass Light</h5>
@@ -97,7 +79,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6">
-                <div class="card product-card h-100 p-3">
+                <div class="card subproduct-card h-100 p-3">
                     <img src="images/explosionproof-streetlight.avif" alt="">
                     <div class="card-body">
                         <h5>Explosion Proof Street Light</h5>
@@ -107,7 +89,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6">
-                <div class="card product-card h-100 p-3">
+                <div class="card subproduct-card h-100 p-3">
                     <img src="images/bulkhead.webp" alt="">
                     <div class="card-body">
                         <h5>Bulkhead Light</h5>
@@ -117,7 +99,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6">
-                <div class="card product-card h-100 p-3">
+                <div class="card subproduct-card h-100 p-3">
                     <img src="images/flameproof-tube-light.webp" alt="">
                     <div class="card-body">
                         <h5>Flameproof Tube Light</h5>
@@ -127,7 +109,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6">
-                <div class="card product-card h-100 p-3">
+                <div class="card subproduct-card h-100 p-3">
                     <img src="images/handlamp.jpg" alt="">
                     <div class="card-body">
                         <h5>Hand Lamp</h5>
@@ -141,59 +123,164 @@
     </div>
 </section>
 
-<!-- 🔵 FEATURES -->
-<section class="py-5 grey-bg">
-    <div class="container text-center">
+ <!-- FOOTER -->
+<footer class="premium-footer">
 
-        <h2>Key Features</h2>
+    <div class="container">
 
-        <div class="row g-4 mt-4">
+       <div class="row justify-content-between gy-5">
 
-            <div class="col-md-3">
-                <div class="feature-box">High Efficiency</div>
-            </div>
+    <!-- Head Office -->
+    <div class="col-lg-3 col-md-6">
 
-            <div class="col-md-3">
-                <div class="feature-box">Surge Protection</div>
-            </div>
+        <h5 class="footer-title">Head Office</h5>
 
-            <div class="col-md-3">
-                <div class="feature-box">Over Voltage Protection</div>
-            </div>
+        <ul class="footer-info">
 
-            <div class="col-md-3">
-                <div class="feature-box">Heavy Duty Design</div>
-            </div>
+            <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>137, Ravindra Nagar, Airport Rd, Jagatpura, Jaipur-302017 </span>
+            </li>
+
+            <li>
+                <i class="fas fa-phone"></i>
+                <span>+91-7300161962</span>
+                <span>+91-7737808411</span>
+            </li>
+
+            <li>
+                <i class="fas fa-envelope"></i>
+                <span>info@maschinell.in</span>
+                 <span>info.maschinell@gmail.com</span>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- Quick Links -->
+    <div class="col-lg-2 col-md-6">
+
+        <h5 class="footer-title">Quick Links</h5>
+
+        <ul class="footer-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About Us</a></li>
+
+            <li><a href="products.html">Products</a></li>
+
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+
+    </div>
+
+    <!-- Social -->
+    <div class="col-lg-2 col-md-6">
+
+        <h5 class="footer-title">Connect Now</h5>
+
+        <p class="footer-text-small">
+            Follow us for updates and insights.
+        </p>
+
+        <div class="social-icons">
+
+            <a href="https://www.linkedin.com/company/maschinell-industrial-enterprises-007/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://youtube.com" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
 
         </div>
 
     </div>
-</section>
 
-<!-- 🔵 APPLICATION -->
-<section class="py-5 blue-bg text-white">
-    <div class="container text-center">
-
-        <h2>Applications</h2>
-
-        <div class="row g-4 mt-4">
-
-            <div class="col-md-4"><div class="feature-box">Oil & Gas</div></div>
-            <div class="col-md-4"><div class="feature-box">Chemical Plants</div></div>
-            <div class="col-md-4"><div class="feature-box">Refineries</div></div>
-            <div class="col-md-4"><div class="feature-box">Power Plants</div></div>
-            <div class="col-md-4"><div class="feature-box">Warehouses</div></div>
-            <div class="col-md-4"><div class="feature-box">Hazardous Areas</div></div>
-
+</div>
+<div class="footer-bottom">
+    <p>&copy; 2026 Maschinell Industrial Enterprises. All Rights Reserved.</p>
+</div>
         </div>
 
     </div>
-</section>
 
-<!-- 🔵 FOOTER -->
-<footer class="bg-dark text-white text-center p-3">
-    <p>© 2026 Maschinell Industrial Enterprises</p>
 </footer>
+<!-- STICKY QUERY BUTTON -->
+
+<div class="query-tab" onclick="openQueryForm()">
+
+    <span>Any Query</span>
+
+    <i class="fas fa-comments"></i>
+
+</div>
+
+<!-- QUERY TAB -->
+
+<div class="query-tab" onclick="openQueryForm()">
+
+    <span>Any Query</span>
+
+    <i class="fas fa-comments"></i>
+
+</div>
+
+
+<!-- QUERY POPUP -->
+
+<div class="query-popup" id="queryPopup">
+
+    <div class="query-box">
+
+        <button class="close-btn" onclick="closeQueryForm()">
+            &times;
+        </button>
+
+        <h3>Any Query? Fill Your Details</h3>
+
+        <form id="query-form">
+
+            <div class="mb-3">
+                <input type="text"
+                name="name"
+                class="form-control"
+                placeholder="Your Name"
+                required>
+            </div>
+
+            <div class="mb-3">
+                <input type="email"
+                name="email"
+                class="form-control"
+                placeholder="Your Email"
+                required>
+            </div>
+
+            <div class="mb-3">
+                <textarea
+                name="message"
+                class="form-control"
+                placeholder="Your Message"
+                required></textarea>
+            </div>
+
+            <button type="submit" class="query-submit-btn">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <div class="floating-buttons">
@@ -209,5 +296,61 @@
     </a>
 
 </div>
+<script>
+
+function openQueryForm() {
+    document.getElementById("queryPopup").style.display = "flex";
+}
+
+function closeQueryForm() {
+    document.getElementById("queryPopup").style.display = "none";
+}
+
+</script>
+<script>
+/* popup open */
+function openQueryForm() {
+
+    document.getElementById("queryPopup").style.display = "flex";
+
+}
+/* popup close */
+function closeQueryForm() {
+
+    document.getElementById("queryPopup").style.display = "none";
+
+}
+/* popup emailjs */
+document.getElementById("query-form")
+.addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_ds16cl2",
+        "template_ejx3v8r",
+        this
+    )
+
+    .then(function() {
+
+        alert("Message sent successfully!");
+
+        document.getElementById("query-form").reset();
+
+        closeQueryForm();
+
+    },
+
+    function(error) {
+
+        alert("Failed to send message!");
+
+        console.log(error);
+
+    });
+
+});
+</script>
 </body>
 </html>

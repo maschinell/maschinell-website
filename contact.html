@@ -26,33 +26,30 @@
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- 🔥 UPDATED NAVBAR -->
+ 
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
     <div class="container">
-
         <a class="navbar-brand" href="index.html">
-            <img src="images/logo.jpeg" alt="Maschinell Logo">
+            <img src="images/logo.png" alt="Maschinell Logo">
         </a>
-
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse justify-content-center" id="nav">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link nav-blue" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link nav-blue active" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link nav-blue" href="about.html">About</a></li>
                 <li class="nav-item"><a class="nav-link nav-blue" href="products.html">Products</a></li>
                  <li class="nav-item"><a class="nav-link nav-blue" href="#">Projects</a></li>
-                <li class="nav-item"><a class="nav-link nav-blue" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link nav-blue active" href="contact.html">Contact</a></li>
             </ul>
         </div>
-
     </div>
 </nav>
 
 <!-- HEADER -->
-<section class="py-5 text-center text-white" style="background:#0d3b66;">
+<section class="contact-header">
     <div class="container">
         <h1>Contact Us</h1>
         <p>Get in touch for industrial electrical solutions</p>
@@ -163,10 +160,168 @@
 </section>
 
 
-<!-- FOOTER -->
-<footer class="bg-dark text-white text-center p-3">
-    <p>© 2026 Maschinell Industrial Enterprises</p>
+ <!-- FOOTER -->
+<footer class="premium-footer">
+
+    <div class="container">
+
+       <div class="row justify-content-between gy-5">
+
+    <!-- Head Office -->
+    <div class="col-lg-3 col-md-6">
+
+        <h5 class="footer-title">Head Office</h5>
+
+        <ul class="footer-info">
+
+            <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>137, Ravindra Nagar, Airport Rd, Jagatpura, Jaipur-302017 </span>
+            </li>
+
+            <li>
+                <i class="fas fa-phone"></i>
+                <span>+91-7300161962</span>
+                <span>+91-7737808411</span>
+            </li>
+
+            <li>
+                <i class="fas fa-envelope"></i>
+                <span>info@maschinell.in</span>
+                 <span>info.maschinell@gmail.com</span>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- Quick Links -->
+    <div class="col-lg-2 col-md-6">
+
+        <h5 class="footer-title">Quick Links</h5>
+
+        <ul class="footer-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About Us</a></li>
+
+            <li><a href="products.html">Products</a></li>
+
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+
+    </div>
+
+    <!-- Social -->
+    <div class="col-lg-2 col-md-6">
+
+        <h5 class="footer-title">Connect Now</h5>
+
+        <p class="footer-text-small">
+            Follow us for updates and insights.
+        </p>
+
+        <div class="social-icons">
+
+            <a href="https://www.linkedin.com/company/maschinell-industrial-enterprises-007/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://youtube.com" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="footer-bottom">
+    <p>&copy; 2026 Maschinell Industrial Enterprises. All Rights Reserved.</p>
+</div>
+        </div>
+
+    </div>
+
 </footer>
+<!-- STICKY QUERY BUTTON -->
+
+<div class="query-tab" onclick="openQueryForm()">
+
+    <span>Any Query</span>
+
+    <i class="fas fa-comments"></i>
+
+</div>
+
+
+<!-- QUERY POPUP -->
+
+<!-- QUERY TAB -->
+
+<div class="query-tab" onclick="openQueryForm()">
+
+    <span>Any Query</span>
+
+    <i class="fas fa-comments"></i>
+
+</div>
+
+
+<!-- QUERY POPUP -->
+
+<div class="query-popup" id="queryPopup">
+
+    <div class="query-box">
+
+        <button class="close-btn" onclick="closeQueryForm()">
+            &times;
+        </button>
+
+        <h3>Any Query? Fill Your Details</h3>
+
+        <form id="query-form">
+
+            <div class="mb-3">
+                <input type="text"
+                name="name"
+                class="form-control"
+                placeholder="Your Name"
+                required>
+            </div>
+
+            <div class="mb-3">
+                <input type="email"
+                name="email"
+                class="form-control"
+                placeholder="Your Email"
+                required>
+            </div>
+
+            <div class="mb-3">
+                <textarea
+                name="message"
+                class="form-control"
+                placeholder="Your Message"
+                required></textarea>
+            </div>
+
+            <button type="submit" class="query-submit-btn">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
 
 <div class="floating-buttons">
 
@@ -216,6 +371,69 @@ function copyNumber(button, number) {
     }, 2000);
 }
 </script>
+<script>
 
+function openQueryForm() {
+    document.getElementById("queryPopup").style.display = "flex";
+}
+
+function closeQueryForm() {
+    document.getElementById("queryPopup").style.display = "none";
+}
+
+</script>
+<script>
+
+/* popup open */
+
+function openQueryForm() {
+
+    document.getElementById("queryPopup").style.display = "flex";
+
+}
+
+/* popup close */
+
+function closeQueryForm() {
+
+    document.getElementById("queryPopup").style.display = "none";
+
+}
+
+
+/* popup emailjs */
+
+document.getElementById("query-form")
+.addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_ds16cl2",
+        "template_ejx3v8r",
+        this
+    )
+
+    .then(function() {
+
+        alert("Message sent successfully!");
+
+        document.getElementById("query-form").reset();
+
+        closeQueryForm();
+
+    },
+
+    function(error) {
+
+        alert("Failed to send message!");
+
+        console.log(error);
+
+    });
+
+});
+
+</script>
 </body>
 </html>
