@@ -585,120 +585,118 @@ section {
    PREMIUM INDUSTRIAL HERO
 ========================= */
 
-.hero-section {
+.hero-section{
 
-    padding: 35px 0;
+    padding:0;
 
-    background: linear-gradient(
+    background:linear-gradient(
         135deg,
         #F8FAFC 0%,
         #EEF7F1 100%
     );
 
-    position: relative;
+    position:relative;
 
-    overflow: hidden;
+    overflow:hidden;
+}
+
+/* subtle blue glow */
+
+.hero-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120px;
+    right:-120px;
+
+    width:320px;
+    height:350px;
+
+    background:rgba(0,82,204,.08);
+
+    filter:blur(100px);
+
+    border-radius:50%;
+
+    z-index:0;
 }
 
 /* subtle green glow */
 
-.hero-section::before {
+.hero-section::after{
 
-    content: "";
+    content:"";
 
-    position: absolute;
+    position:absolute;
 
-    top: -120px;
-    right: -120px;
+    bottom:-100px;
+    left:-100px;
 
-    width: 320px;
-    height: 350px;
+    width:260px;
+    height:260px;
 
-    background: rgba(0,82,204,0.08);
+    background:rgba(0,177,64,.08);
 
-    filter: blur(100px);
+    filter:blur(90px);
 
-    border-radius: 50%;
+    border-radius:50%;
 
-    z-index: 0;
+    z-index:0;
 }
 
-/* subtle orange glow */
-
-.hero-section::after {
-
-    content: "";
-
-    position: absolute;
-
-    bottom: -100px;
-    left: -100px;
-
-    width: 260px;
-    height: 260px;
-
-    background: rgba(0,177,64,0.08);
-
-    filter: blur(90px);
-
-    border-radius: 50%;
-
-    z-index: 0;
-}
 /* =========================
-   SLIDER BOX
+   HERO SLIDER
 ========================= */
 
-.hero-slider {
+.hero-slider{
 
-    position: relative;
+    position:relative;
 
-    overflow: hidden;
+    z-index:2;
 
-    border-radius: 30px;
+    overflow:hidden;
 
-    background: #ffffff;
-
-    border: 1px solid rgba(0,0,0,0.04);
+    background:#fff;
 
     box-shadow:
-        0 18px 45px rgba(0,0,0,0.08);
-
-    z-index: 2;
+    0 15px 40px rgba(0,0,0,.08);
 }
 
 /* slides */
 
-.slide {
+.slide{
 
-    display: none;
+    display:none;
 
-    width: 100%;
+    width:100%;
 }
 
-.slide.active {
+.slide.active{
 
-    display: block;
+    display:block;
 }
 
 /* =========================
-   IMAGE FIX
+   IMAGE
 ========================= */
 
 .slide img{
-    padding-top: 20px;
-    width: 100%;
-    height: auto;
+
+    width:100%;
+    height:95vh;
     object-fit:contain;
-    object-position:center;
-    display: block;
+    display:block;
 }
 
-/* smooth premium hover */
+/* smooth hover */
 
-.hero-slider:hover .slide img {
+.hero-slider:hover .slide img{
 
-    transform: scale(1.01);
+    transform:scale(1.01);
+
+    transition:.4s ease;
 }
 
 /* =========================
@@ -706,64 +704,90 @@ section {
 ========================= */
 
 .prev,
-.next {
+.next{
 
-    position: absolute;
+    position:absolute;
 
-    top: 50%;
+    top:55%;
 
-    transform: translateY(-50%);
+    transform:translateY(-50%);
 
-    background: rgba(255,255,255,0.92);
+    width:40px;
+    height:40px;
 
-    color: #0052CC;
+    border:none;
 
-    border: 1px solid rgba(0,82,204,0.08);
+    border-radius:50%;
 
-    width: 52px;
+    background:rgba(255,255,255,.95);
 
-    height: 52px;
+    color:#0052CC;
 
-    border-radius: 50%;
+    font-size:22px;
 
-    cursor: pointer;
+    cursor:pointer;
 
-    font-size: 22px;
-
-    z-index: 10;
-
-    transition: all 0.3s ease;
+    z-index:10;
 
     box-shadow:
-        0 8px 22px rgba(0,0,0,0.08);
+    0 8px 22px rgba(0,0,0,.10);
+
+    transition:.3s ease;
 }
-/* hover */
 
 .prev:hover,
-.next:hover {
+.next:hover{
 
-    background: #0052CC;
+    background:#0052CC;
 
-    color: #FFFFFF;
+    color:#fff;
 
-    transform: translateY(-50%) scale(1.08);
-
-    box-shadow:
-        0 10px 25px rgba(0,82,204,0.25);
+    transform:translateY(-50%) scale(1.08);
 }
 
-/* left */
+.prev{
 
-.prev {
-
-    left: 20px;
+    left:20px;
 }
 
-/* right */
+.next{
 
-.next {
+    right:20px;
+}
 
-    right: 20px;
+/* =========================
+   LARGE DESKTOP
+========================= */
+
+@media(min-width:1400px){
+
+    .hero-slider{
+
+        max-height:90vh;
+    }
+
+    .slide img{
+
+        width:100%;
+
+        height:auto;
+    }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:992px){
+
+    .prev,
+    .next{
+
+        width:44px;
+        height:44px;
+
+        font-size:18px;
+    }
 }
 
 /* =========================
@@ -774,44 +798,48 @@ section {
 
     .hero-section{
 
-        padding: 18px 0;
+        padding:0;
     }
 
     .hero-slider{
 
-        border-radius: 20px;
+        border-radius:0;
     }
 
     .slide img{
 
-        height: 200px;
+        width:100%;
 
-        object-fit: contain;
+        height:auto;
 
-        object-position: center;
+        display:block;
     }
-}
 
     .prev,
     .next{
 
-        width: 40px;
+        width:36px;
+        height:36px;
 
-        height: 40px;
-
-        font-size: 18px;
+        font-size:14px;
     }
 
     .prev{
 
-        left: 10px;
+        left:8px;
     }
 
     .next{
 
-        right: 10px;
+        right:8px;
     }
-    
+
+    .hero-section::before,
+    .hero-section::after{
+
+        display:none;
+    }
+}
 /* =========================
    HOME PRODUCTS SECTION
 ========================= */
