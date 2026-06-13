@@ -35,7 +35,7 @@ const sSeries = [
 {
     name:"Vigi Modules",
 
-    image:"images/vigi-module.jpg",
+    image:"images/vigi-module.webp",
 
     description:
     "Add-on earth leakage protection modules for Schneider circuit breakers.",
@@ -64,7 +64,7 @@ const sSeries = [
 {
     name:"Vigirex Earth Leakage Relays",
 
-    image:"images/vigirex-earth.jpg",
+    image:"images/vigirex-earth.webp",
 
     description:
     "Advanced earth leakage relays for continuous monitoring and protection of electrical systems.",
@@ -93,7 +93,7 @@ const sSeries = [
 {
     name:"PowerLogic Earth Leakage Monitoring",
 
-    image:"images/earth-leakage-mointoring.jpg",
+    image:"images/earth-leakage-mointoring.webp",
 
     description:
     "Intelligent monitoring solution for leakage current analysis and preventive maintenance.",
@@ -122,7 +122,7 @@ const sSeries = [
 {
     name:"Core Balance Current Transformers (CBCT)",
 
-    image:"images/cbct.jpg",
+    image:"images/cbct.webp",
 
     description:
     "Current transformers designed to work with earth leakage relays for accurate earth fault detection and monitoring.",

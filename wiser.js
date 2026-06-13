@@ -6,7 +6,7 @@ const sSeries = [
 {
     name:"Wiser Smart Home Automation",
 
-    image:"images/wiser-smarthome.jpg",
+    image:"images/wiser-smarthome.webp",
 
     description:
     "An intelligent home automation platform that enables seamless control of lighting, energy usage and connected devices for enhanced comfort and convenience.",
@@ -35,7 +35,7 @@ const sSeries = [
 {
     name:"Wiser Smart Lighting Control",
 
-    image:"images/wiser-lighting.jpg",
+    image:"images/wiser-lighting.webp",
 
     description:
     "Advanced smart lighting solutions that allow users to control, schedule and optimize lighting for improved comfort and energy efficiency.",
@@ -64,7 +64,7 @@ const sSeries = [
 {
     name:"Wiser Energy Management",
 
-    image:"images/wiser-energy.jpg",
+    image:"images/wiser-energy.webp",
 
     description:
     "Intelligent energy management solutions that help monitor, analyze and optimize electricity consumption for improved efficiency.",
@@ -93,7 +93,7 @@ const sSeries = [
 {
     name:"Wiser Connected Devices",
 
-    image:"images/wiser-connected.jpg",
+    image:"images/wiser-connected.webp",
 
     description:
     "Connected home devices designed to work seamlessly within the Wiser ecosystem for enhanced automation and control.",

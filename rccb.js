@@ -32,7 +32,7 @@ features:[
 },
 {
 name:"Easy9 RCCB",
-image:"images/easy9-rccb.jpg",
+image:"images/easy9-rccb.webp",
 
 description:
 "Economic RCCB solution providing dependable protection against electric shock and leakage currents.",
@@ -60,7 +60,7 @@ features:[
 },
 {
 name:"Acti9 RCCB Solutions",
-image:"images/acti9-rccb.jpg",
+image:"images/acti9-rccb.webp",
 
 description:
 "Comprehensive residual current protection solutions for residential, commercial and industrial applications.",

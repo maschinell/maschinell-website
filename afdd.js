@@ -7,7 +7,7 @@ const sSeries = [
 {
     name:"Acti9 Active AFDD",
 
-    image:"images/acti9-active-afdd.jpg",
+    image:"images/acti9-active-afdd.webp",
 
     description:
     "Advanced Arc Fault Detection Device designed to identify dangerous electrical arc faults and reduce fire risks.",
@@ -36,7 +36,7 @@ const sSeries = [
 {
     name:"Acti9 AFDD + MCB",
 
-    image:"images/acti9-afdd+mcb.jpg",
+    image:"images/acti9-afdd+mcb.webp",
 
     description:
     "Integrated AFDD and MCB solution providing arc fault, overload and short circuit protection.",
@@ -65,7 +65,7 @@ const sSeries = [
 {
     name:"Acti9 AFDD + RCBO",
 
-    image:"images/afdd-rcbo.jpg",
+    image:"images/afdd-rcbo.webp",
 
     description:
     "Comprehensive protection solution combining AFDD, residual current protection and circuit protection in a single device.",

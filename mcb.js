@@ -4,7 +4,7 @@
 const sSeries = [
 {
 name:"Acti9 iC60",
-image:"images/acti9-ic60.jpg",
+image:"images/acti9-ic60.webp",
 
 description:
 "Premium miniature circuit breaker range for residential, commercial and industrial protection.",
@@ -27,7 +27,7 @@ features:[
 },
 {
 name:"Acti9 iK60",
-image:"images/acti9-ik60.jpg",
+image:"images/acti9-ik60.webp",
 
 description:
 "Reliable and cost-effective MCB solution for commercial and residential installations.",
@@ -50,7 +50,7 @@ features:[
 },
 {
 name:"Easy9 MCB",
-image:"images/easy9-mcb.jpg",
+image:"images/easy9-mcb.webp",
 
 description:
 "Economic miniature circuit breaker range for residential and light commercial applications.",
@@ -73,7 +73,7 @@ features:[
 },
 {
 name:"Multi9 C60",
-image:"images/multi9-c60.jpg",
+image:"images/multi9-c60.webp",
 
 description:
 "Proven MCB range for industrial and commercial electrical distribution systems.",

@@ -6,7 +6,7 @@ const sSeries = [
 {
     name:"Opale Switches",
 
-    image:"images/opale-swtiches.jpg",
+    image:"images/opale-swtiches.webp",
 
     description:
     "Stylish modular switches designed for modern residential and commercial interiors.",
@@ -35,7 +35,7 @@ const sSeries = [
 {
     name:"Opale Sockets",
 
-    image:"images/oplae-sockets.jpg",
+    image:"images/oplae-sockets.webp",
 
     description:
     "Reliable and elegant socket solutions for safe and convenient power access.",
@@ -92,7 +92,7 @@ const sSeries = [
 {
     name:"Opale Modular Accessories",
 
-    image:"images/oplae-ma.jpg",
+    image:"images/oplae-ma.webp",
 
     description:
     "A range of modular electrical accessories designed to complement Opale switches and sockets for modern installations.",

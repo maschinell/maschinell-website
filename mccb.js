@@ -69,7 +69,7 @@ const sSeries = [
 {
     name:"Compact NS",
 
-    image:"images/compact-ns.jpg",
+    image:"images/compact-ns.webp",
 
     description:
     "Industrial MCCB range for heavy duty applications.",
@@ -100,7 +100,7 @@ const sSeries = [
 {
     name:"EasyPact EZC",
 
-    image:"images/easypact-ezc.jpg",
+    image:"images/easypact-ezc.webp",
 
     description:
     "Compact and cost effective MCCB range.",

@@ -64,7 +64,7 @@ const sSeries = [
 {
     name:"AvatarOn Fan Regulators",
 
-    image:"images/avataron-fan-regulator.jpg",
+    image:"images/avataron-fan-regulator.webp",
 
     description:
     "Advanced fan speed regulators designed for smooth control and enhanced comfort.",
@@ -122,7 +122,7 @@ const sSeries = [
 {
     name:"AvatarOn Communication Modules",
 
-    image:"images/avataron-cm.jpg",
+    image:"images/avataron-cm.webp",
 
     description:
     "Communication outlets for data, telephone and television connectivity in modern installations.",

@@ -6,7 +6,7 @@ const sSeries = [
 {
     name:"Wall Mount Motion Sensors",
 
-    image:"images/wall-sensor.jpg",
+    image:"images/wall-sensor.webp",
 
     description:
     "Wall-mounted motion sensors designed to automatically detect movement and control lighting systems for improved convenience and energy efficiency.",

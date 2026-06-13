@@ -6,7 +6,7 @@ const sSeries = [
 {
     name:"PratiKa Industrial Plugs",
 
-    image:"images/pratika-plug.jpg",
+    image:"images/pratika-plug.webp",
 
     description:
     "Industrial plugs designed for safe, secure and reliable power connections in demanding industrial and commercial environments.",
@@ -35,7 +35,7 @@ const sSeries = [
 {
     name:"PratiKa Industrial Sockets",
 
-    image:"images/pratika-socket.jpg",
+    image:"images/pratika-socket.webp",
 
     description:
     "Industrial sockets engineered to provide dependable electrical connectivity and operational safety in industrial installations.",
@@ -93,7 +93,7 @@ const sSeries = [
 {
     name:"PratiKa Appliance Inlets",
 
-    image:"images/pratika-inlet.jpg",
+    image:"images/pratika-inlet.webp",
 
     description:
     "Appliance inlets designed to provide safe and reliable incoming power connections for industrial equipment and machinery.",
@@ -122,7 +122,7 @@ const sSeries = [
 {
     name:"PratiKa Panel Mounted Sockets",
 
-    image:"images/pratika-mounted-socket.jpg",
+    image:"images/pratika-mounted-socket.webp",
 
     description:
     "Panel mounted industrial sockets designed for electrical panels, distribution systems and industrial equipment installations.",

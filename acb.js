@@ -5,7 +5,7 @@
 const sSeries = [
 {
 name:"Masterpact MTZ",
-image:"images/masterpactmtz.jpg",
+image:"images/masterpactmtz.webp",
 
 description:
 "Premium intelligent Air Circuit Breaker with advanced protection, monitoring and communication capabilities.",
@@ -33,7 +33,7 @@ features:[
 },
 {
 name:"Masterpact NW",
-image:"images/masterpactnw.jpg",
+image:"images/masterpactnw.webp",
 
 description:
 "Industrial Air Circuit Breaker designed for high-performance power distribution systems.",
@@ -61,7 +61,7 @@ features:[
 },
 {
 name:"EasyPact MVS",
-image:"images/easypactmvs.jpg",
+image:"images/easypactmvs.webp",
 
 description:
 "Economical Air Circuit Breaker solution for commercial and industrial power distribution.",

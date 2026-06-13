@@ -6,7 +6,7 @@ const sSeries = [
 {
     name:"Acti9 Isobar P",
 
-    image:"images/acti9-isobar-p.jpg",
+    image:"images/acti9-isobar-p.webp",
 
     description:
     "Premium distribution board solution designed for commercial and industrial electrical installations.",
@@ -35,7 +35,7 @@ const sSeries = [
 {
     name:"Acti9 Isobar B",
 
-    image:"images/acti9-isobar-b.jpg",
+    image:"images/acti9-isobar-b.webp",
 
     description:
     "Flexible and efficient power distribution board for residential and commercial applications.",
@@ -64,7 +64,7 @@ const sSeries = [
 {
     name:"Easy9 Distribution Board",
 
-    image:"images/easy9-distribution-board.jpg",
+    image:"images/easy9-distribution-board.webp",
 
     description:
     "Cost-effective distribution board solution for residential and light commercial installations.",
@@ -93,7 +93,7 @@ const sSeries = [
 {
     name:"PrismaSeT",
 
-    image:"images/prismaset.jpg",
+    image:"images/prismaset.webp",
 
     description:
     "Advanced low-voltage switchboard and distribution board solution for critical power distribution systems.",
@@ -121,7 +121,7 @@ const sSeries = [
 {
     name:"Pragma Distribution Board",
 
-    image:"images/pragma.jpg",
+    image:"images/pragma.webp",
 
     description:
     "Modular distribution board solution designed for residential and commercial electrical installations with enhanced safety and flexibility.",

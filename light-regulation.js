@@ -35,7 +35,7 @@ const sSeries = [
 {
     name:"Lux Sensors",
 
-    image:"images/light-lux.jpg",
+    image:"images/light-lux.webp",
 
     description:
     "Lux sensors measure ambient light levels and enable intelligent lighting control to maintain optimal illumination conditions.",
@@ -64,7 +64,7 @@ const sSeries = [
 {
     name:"Light Level Sensors",
 
-    image:"images/light-lls.jpg",
+    image:"images/light-lls.webp",
 
     description:
     "Light level sensors continuously monitor environmental lighting conditions and optimize artificial lighting usage.",

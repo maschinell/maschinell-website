@@ -5,7 +5,7 @@ const sSeries = [
 {
     name:"Zencelo Full-Flat Switches",
 
-    image:"images/zencelo-switches.jpg",
+    image:"images/zencelo-switches.webp",
 
     description:
     "Premium full-flat modular switches featuring minimalist aesthetics and smooth operation for modern interiors.",
@@ -34,7 +34,7 @@ const sSeries = [
 {
     name:"Zencelo Sockets",
 
-    image:"images/zencelo-sockets.jpg",
+    image:"images/zencelo-sockets.webp",
 
     description:
     "Elegant socket solutions designed to provide safe, reliable and convenient power access.",
@@ -63,7 +63,7 @@ const sSeries = [
 {
     name:"Zencelo USB Chargers",
 
-    image:"images/zencelo-usb.jpg",
+    image:"images/zencelo-usb.webp",
 
     description:
     "Integrated USB charging modules designed for modern lifestyles and connected spaces.",
@@ -121,7 +121,7 @@ const sSeries = [
 {
     name:"Zencelo Communication Modules",
 
-    image:"images/zencelo-cm.jpg",
+    image:"images/zencelo-cm.webp",
 
     description:
     "Data, telephone and TV outlets designed for modern communication and multimedia requirements.",

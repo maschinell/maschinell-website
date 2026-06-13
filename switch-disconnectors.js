@@ -4,7 +4,7 @@ const sSeries = [
 {
     name:"Compact INS",
 
-    image:"images/compactins.jpg",
+    image:"images/compactins.webp",
 
     description:
     "High-performance switch disconnector range designed for safe isolation and power distribution applications.",
@@ -33,7 +33,7 @@ const sSeries = [
 {
     name:"Compact INV",
 
-    image:"images/compactinv.jpg",
+    image:"images/compactinv.webp",
 
     description:
     "Motorized switch disconnector solution for remote operation and critical power applications.",
@@ -91,7 +91,7 @@ const sSeries = [
 {
     name:"Acti9 Isolators",
 
-    image:"images/acti9-isloator.jpg",
+    image:"images/acti9-isloator.webp",
 
     description:
     "Modular isolators designed for residential and commercial electrical distribution systems.",

@@ -5,7 +5,7 @@ const sSeries = [
 {
     name:"Hotel Energy Management Sensors",
 
-    image:"images/hotel-building.jpg",
+    image:"images/hotel-building.webp",
 
     description:
     "Intelligent sensors designed to support hotel energy management strategies through automated control of lighting and electrical systems.",

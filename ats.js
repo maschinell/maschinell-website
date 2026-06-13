@@ -4,7 +4,7 @@ ATS SERIES DATA
 const sSeries = [
 {
 name:"TransferPacT",
-image:"images/transferpact.jpg",
+image:"images/transferpact.webp",
 
 description:
 "Automatic Transfer Switch solution for seamless transfer between utility and generator power sources.",
@@ -32,7 +32,7 @@ features:[
 },
 {
 name:"TransferPacT Active",
-image:"images/transferpact-active.jpg",
+image:"images/transferpact-active.webp",
 
 description:
 "Advanced ATS solution with intelligent monitoring, communication and fast transfer capabilities.",
@@ -60,7 +60,7 @@ features:[
 },
 {
 name:"Source Changeover Solutions",
-image:"images/source_changeover.jpg",
+image:"images/source_changeover.webp",
 
 description:
 "Manual and automatic source changeover solutions for industrial and commercial power systems.",

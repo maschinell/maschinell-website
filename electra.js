@@ -35,7 +35,7 @@ const sSeries = [
 {
     name:"Electra Metal Clad Sockets",
 
-    image:"images/electra-sockets.jpg",
+    image:"images/electra-sockets.webp",
 
     description:
     "Robust metal clad sockets engineered for safe and dependable power connections in demanding operating environments.",

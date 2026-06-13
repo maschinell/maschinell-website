@@ -6,7 +6,7 @@ const sSeries = [
 {
     name:"Kavacha Weatherproof Switches",
 
-    image:"images/kavacha-switches.jpg",
+    image:"images/kavacha-switches.webp",
 
     description:
     "Weatherproof switches designed to provide reliable operation and protection in outdoor and demanding environments.",
@@ -35,7 +35,7 @@ const sSeries = [
 {
     name:"Kavacha Weatherproof Sockets",
 
-    image:"images/kavacha-sockets.jpg",
+    image:"images/kavacha-sockets.webp",
 
     description:
     "Durable weatherproof sockets engineered for safe power access in outdoor and industrial installations.",
@@ -64,7 +64,7 @@ const sSeries = [
 {
     name:"Kavacha Switched Socket Outlets",
 
-    image:"images/kavacha-socket-outlet.jpg",
+    image:"images/kavacha-socket-outlet.webp",
 
     description:
     "Weatherproof switched socket outlets combining convenience, safety and protection for demanding applications.",
@@ -93,7 +93,7 @@ const sSeries = [
 {
     name:"Kavacha Junction Boxes & Enclosures",
 
-    image:"images/kavacha-jxn.png",
+    image:"images/kavacha-jxn.webp",
 
     description:
     "Protective junction boxes and enclosures designed to safeguard electrical connections in harsh environments.",

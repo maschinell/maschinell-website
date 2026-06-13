@@ -6,7 +6,7 @@ const sSeries = [
 {
     name:"Unica Switches",
 
-    image:"images/unica-switches.jpg",
+    image:"images/unica-switches.webp",
 
     description:
     "Premium modular switches designed for luxury homes, offices and modern commercial spaces.",

@@ -6,7 +6,7 @@ const sSeries = [
 {
     name:"Acti9 iPRD",
 
-    image:"images/acti9-iprd.jpg",
+    image:"images/acti9-iprd.webp",
 
     description:
     "Advanced surge protection device designed to protect electrical installations against transient overvoltages caused by lightning and switching events.",
@@ -35,7 +35,7 @@ const sSeries = [
 {
     name:"Acti9 iQuick PRD",
 
-    image:"images/acti9-iquick-prd.jpg",
+    image:"images/acti9-iquick-prd.webp",
 
     description:
     "Plug-in surge protection solution designed for quick replacement and reduced downtime.",
@@ -64,7 +64,7 @@ const sSeries = [
 {
     name:"Easy9 SPD",
 
-    image:"images/easy9-spd.jpg",
+    image:"images/easy9-spd.webp",
 
     description:
     "Cost-effective surge protection device for residential and light commercial applications.",
@@ -93,7 +93,7 @@ const sSeries = [
 {
     name:"SurgeArrest Performance",
 
-    image:"images/surgearrest.jpg",
+    image:"images/surgearrest.webp",
 
     description:
     "High-performance surge protection solution for critical electrical and electronic equipment.",
@@ -122,7 +122,7 @@ const sSeries = [
 {
     name:"SurgeArrest Essential",
 
-    image:"images/surgearrest-essential.jpg",
+    image:"images/surgearrest-essential.webp",
 
     description:
     "Reliable surge protection solution for everyday electrical installations.",

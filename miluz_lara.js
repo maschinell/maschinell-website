@@ -6,7 +6,7 @@ const sSeries = [
 {
     name:"Miluz Lara Switches",
 
-    image:"images/miluz-lara-switches.jpg",
+    image:"images/miluz-lara-switches.webp",
 
     description:
     "Modern modular switches designed to deliver style, convenience and reliable everyday performance.",
@@ -35,7 +35,7 @@ const sSeries = [
 {
     name:"Miluz Lara Sockets",
 
-    image:"images/miluz-lara-sockets.jpg",
+    image:"images/miluz-lara-sockets.webp",
 
     description:
     "Durable and stylish socket solutions designed for safe and convenient power access.",
@@ -122,7 +122,7 @@ const sSeries = [
 {
     name:"Miluz Lara Communication Modules",
 
-    image:"images/miluz-lara-cm.jpg",
+    image:"images/miluz-lara-cm.webp",
 
     description:
     "Communication outlets for data, telephone and television connectivity in modern installations.",

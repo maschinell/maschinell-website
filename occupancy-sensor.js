@@ -34,7 +34,7 @@ const sSeries = [
 {
     name:"Presence Detection Sensors",
 
-    image:"images/occupancy-presence.jpg",
+    image:"images/occupancy-presence.webp",
 
     description:
     "Advanced presence sensors capable of detecting occupant activity for enhanced comfort and efficient building management.",
@@ -63,7 +63,7 @@ const sSeries = [
 {
     name:"Lighting Control Occupancy Sensors",
 
-    image:"images/occupancy-control.jpg",
+    image:"images/occupancy-control.webp",
 
     description:
     "Occupancy sensors designed to optimize lighting systems by automatically switching lights based on room usage.",
@@ -92,7 +92,7 @@ const sSeries = [
 {
     name:"Smart Building Occupancy Solutions",
 
-    image:"images/occupancy-building.jpg",
+    image:"images/occupancy-building.webp",
 
     description:
     "Integrated occupancy sensing solutions that support building automation, energy management and occupant comfort.",

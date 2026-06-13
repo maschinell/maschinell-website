@@ -7,7 +7,7 @@ const sSeries = [
 {
     name:"Livia Switches",
 
-    image:"images/livia-switches.jpg",
+    image:"images/livia-switches.webp",
 
     description:
     "Premium modular switches designed for modern homes and commercial spaces with elegant styling and smooth operation.",
@@ -65,7 +65,7 @@ const sSeries = [
 {
     name:"Livia Communication Modules",
 
-    image:"images/livia-cm.jpg",
+    image:"images/livia-cm.webp",
 
     description:
     "Communication outlets for data, telephone and television connectivity in modern installations.",
