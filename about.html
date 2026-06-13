@@ -12,7 +12,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
@@ -26,7 +25,7 @@
 <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-            <img src="images/logo.webp" alt="Maschinell Logo">
+            <img src="images/logo.webp" alt="Maschinell Logo" width="240" height="60">
         </a>
        <button class="navbar-toggler" type="button"data-bs-toggle="collapse" data-bs-target="#navbarNav">
     <span class="navbar-toggler-icon"></span>
@@ -190,7 +189,16 @@
 
     <!-- Image -->
     <div class="hero-img-box">
-      <img src="images/hero4.webp" alt="Maschinell">
+      <picture>
+  <source media="(max-width:768px)"
+          srcset="images/hero4-mobile.webp">
+
+  <img src="images/hero4.webp"
+       alt="Maschinell"
+       width="700"
+       height="500"
+       fetchpriority="high">
+</picture>
     </div>
 
     <!-- Content -->
@@ -265,11 +273,13 @@
                 <div class="leader-card">
 
                     <div class="leader-image-wrapper">
-
-                        <img src="images/ceo.webp"
-                        class="leader-img"
-                        alt="Sumit Saboo">
-
+                  <img src="images/ceo.webp"
+                    class="leader-img"
+                    alt="Sumit Saboo"
+                    width="400"
+                    height="500"
+                    loading="lazy">
+                        
                     </div>
 
                     <div class="leader-content">
@@ -305,7 +315,10 @@ With roots in a reputed Marwari business community and an entrepreneurial family
 
                         <img src="images/coo.webp"
                         class="leader-img"
-                        alt="Sabhya Saboo">
+                        alt="Sabhya Saboo"
+                        width="400"
+                    height="500"
+                    loading="lazy">
 
                     </div>
 
@@ -353,56 +366,72 @@ With roots in a reputed Marwari business community and an entrepreneurial family
 
           <div class="swiper-slide">
             <div class="industry-card">
-              <img src="images/power and energy.webp">
+              <img src="images/power and energy.webp"  width="400"
+     height="300"
+     loading="lazy">
               <h5>Power & Energy</h5>
             </div>
           </div>
 
           <div class="swiper-slide">
             <div class="industry-card">
-              <img src="images/steel.webp">
+              <img src="images/steel.webp"  width="400"
+     height="300"
+     loading="lazy">
               <h5>Metal & Steel Industry</h5>
             </div>
           </div>
 
           <div class="swiper-slide">
             <div class="industry-card">
-              <img src="images/cement.webp">
+              <img src="images/cement.webp"  width="400"
+     height="300"
+     loading="lazy">
               <h5>Cement Industry</h5>
             </div>
           </div>
 
           <div class="swiper-slide">
             <div class="industry-card">
-              <img src="images/mining.webp">
+              <img src="images/mining.webp"  width="400"
+     height="300"
+     loading="lazy">
               <h5>Mining</h5>
             </div>
           </div>
 
           <div class="swiper-slide">
             <div class="industry-card">
-              <img src="images/paper.webp">
+              <img src="images/paper.webp"  width="400"
+     height="300"
+     loading="lazy">
               <h5>Paper Industry</h5>
             </div>
           </div>
 
           <div class="swiper-slide">
             <div class="industry-card">
-              <img src="images/automation.webp">
+              <img src="images/automation.webp"  width="400"
+     height="300"
+     loading="lazy">
               <h5>Automation</h5>
             </div>
           </div>
 
           <div class="swiper-slide">
             <div class="industry-card">
-              <img src="images/factory.webp">
+              <img src="images/factory.webp"  width="400"
+     height="300"
+     loading="lazy">
               <h5>Manufacturing</h5>
             </div>
           </div>
 
           <div class="swiper-slide">
             <div class="industry-card">
-              <img src="images/construction.webp">
+              <img src="images/construction.webp"  width="400"
+     height="300"
+     loading="lazy">
               <h5>Construction</h5>
             </div>
           </div>
@@ -825,16 +854,17 @@ With roots in a reputed Marwari business community and an entrepreneurial family
 
     <!-- Call Button -->
     <a href="tel:7300161962" class="call-float">
-        <i class="bi bi-telephone-fill"></i>
+        <i class="fa-solid fa-phone"></i>
+
     </a>
 
     <!-- WhatsApp Button -->
     <a href="https://wa.me/7300161962" class="whatsapp-float" target="_blank">
-        <i class="bi bi-whatsapp"></i>
+        <i class="fa-brands fa-whatsapp"></i>
     </a>
 
 </div>
-
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script>
 
 document.addEventListener("DOMContentLoaded", function () {

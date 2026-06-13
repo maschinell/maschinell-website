@@ -23,27 +23,31 @@ in Jaipur, providing MCCB, ACB, switchgear, power distribution, automation and i
       "logo":"https://maschinell.in/images/logo.webp"
     }
     </script>
-
-<!-- Mobile Optimization -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Open Graph (for WhatsApp, LinkedIn sharing) -->
 <meta property="og:title" content="Maschinell Industrial Enterprises">
 <meta property="og:description" content="Reliable industrial electrical solutions trusted by leading industries.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://yourdomain.com">
-<meta property="og:image" content="https://yourdomain.com/images/hero.webp">
+<meta property="og:url" content="https://maschinell.in">
+<meta property="og:image" content="https://maschinell.in/images/hero1.webp">
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Maschinell Industrial Enterprises">
 <meta name="twitter:description" content="Industrial electrical solutions provider in India.">
-<meta name="twitter:image" content="https://yourdomain.com/images/hero.webp">
+<meta name="twitter:image" content="https://maschinell.in/images/hero1.webp">
 <!-- Favicon -->
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Bootstrap -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+     <link rel="preload"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
+
+<noscript>
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</noscript>
     <!-- Custom CSS -->
     <link rel="preload" href="style.css" as="style">
 <link rel="stylesheet" href="style.css">
@@ -54,7 +58,7 @@ in Jaipur, providing MCCB, ACB, switchgear, power distribution, automation and i
 <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-            <img src="images/logo.webp" alt="Maschinell Logo">
+            <img src="images/logo.webp" alt="Maschinell Logo" width="240" height="60" >
         </a>
        <button class="navbar-toggler" type="button"data-bs-toggle="collapse" data-bs-target="#navbarNav">
     <span class="navbar-toggler-icon"></span>
@@ -215,49 +219,53 @@ in Jaipur, providing MCCB, ACB, switchgear, power distribution, automation and i
 
         <div class="hero-slider">
 
-            <!-- Slide 1 -->
-            <div class="slide active">
-                <img src="images/hero1.webp" alt="Schnider" width="1200"
-        height="700"
-        fetchpriority="high"
-        loading="eager">>
-            </div>
-
            <!-- Slide 1 -->
 <div class="slide active">
-    <img src="images/hero1.webp"
-         alt="Schneider"
-         width="1200"
-         height="700"
-         fetchpriority="high"
-         loading="eager">
+    <picture>
+        <source media="(max-width:768px)" srcset="images/hero1-mobile.webp">
+        <img src="images/hero1.webp"
+             alt="Schneider"
+             width="1200"
+             height="700"
+             fetchpriority="high"
+             loading="eager">
+    </picture>
 </div>
 
 <!-- Slide 2 -->
 <div class="slide">
-    <img src="images/hero3.webp"
-         alt="2nd"
-         width="1200"
-         height="700"
-         loading="lazy">
+    <picture>
+        <source media="(max-width:768px)" srcset="images/hero3-mobile.webp">
+        <img src="images/hero3.webp"
+             alt="Schneider Products"
+             width="1200"
+             height="700"
+             loading="lazy">
+    </picture>
 </div>
 
 <!-- Slide 3 -->
 <div class="slide">
-    <img src="images/hero2.webp"
-         alt="3rd"
-         width="1200"
-         height="700"
-         loading="lazy">
+    <picture>
+        <source media="(max-width:768px)" srcset="images/hero2-mobile.webp">
+        <img src="images/hero2.webp"
+             alt="Industrial Solutions"
+             width="1200"
+             height="700"
+             loading="lazy">
+    </picture>
 </div>
 
 <!-- Slide 4 -->
 <div class="slide">
-    <img src="images/hero4.webp"
-         alt="last"
-         width="1200"
-         height="700"
-         loading="lazy">
+    <picture>
+        <source media="(max-width:768px)" srcset="images/hero4-mobile.webp">
+        <img src="images/hero4.webp"
+             alt="Electrical Products"
+             width="1200"
+             height="700"
+             loading="lazy">
+    </picture>
 </div>
             <!-- Buttons -->
             <button class="prev" onclick="prevSlide()">❮</button>
@@ -289,95 +297,129 @@ in Jaipur, providing MCCB, ACB, switchgear, power distribution, automation and i
 
       <div class="swiper-wrapper">
 
-        <!-- CARD 1 -->
-        <div class="swiper-slide">
-          <div class="home-product-card">
-            <img src="images/electrical_pannel.webp" alt="" loading="lazy"
-      width="400"
-      height="300">
-            <div class="card-body text-center">
-              <h5>Electrical Panels</h5>
-              <a href="electrical_pannel.html" class="product-btn">
+        
+<!-- CARD 1 -->
+<div class="swiper-slide">
+    <div class="home-product-card">
+        <picture>
+            <source media="(max-width:768px)" srcset="images/electrical_pannel-mobile.webp">
+            <img src="images/electrical_pannel.webp"
+                 alt="Electrical Panels"
+                 loading="lazy"
+                 width="400"
+                 height="300">
+        </picture>
+        <div class="card-body text-center">
+            <h5>Electrical Panels</h5>
+            <a href="electrical_pannel.html" class="product-btn">
                 View More
-              </a>
-            </div>
-          </div>
+            </a>
         </div>
+    </div>
+</div>
 
-        <!-- CARD 2 -->
-        <div class="swiper-slide">
-          <div class="home-product-card">
-            <img src="images/Electrical-Switchgear.webp" alt="" loading="lazy"
-      width="400"
-      height="300">
-            <div class="card-body text-center">
-              <h5>Switchgear</h5>
-              <a href="switchgear.html" class="product-btn">
+<!-- CARD 2 -->
+<div class="swiper-slide">
+    <div class="home-product-card">
+        <picture>
+            <source media="(max-width:768px)" srcset="images/Electrical-Switchgear-mobile.webp">
+            <img src="images/Electrical-Switchgear.webp"
+                 alt="Electrical Switchgear"
+                 loading="lazy"
+                 width="400"
+                 height="300">
+        </picture>
+        <div class="card-body text-center">
+            <h5>Switchgear</h5>
+            <a href="switchgear.html" class="product-btn">
                 View More
-              </a>
-            </div>
-          </div>
+            </a>
         </div>
+    </div>
+</div>
 
-        <!-- CARD 3 -->
-        <div class="swiper-slide">
-          <div class="home-product-card">
-            <img src="images/wire.webp" alt="" loading="lazy"
-      width="400"
-      height="300">
-            <div class="card-body text-center">
-              <h5>Wires & Cables</h5>
-              <a href="wiresncable.html" class="product-btn">
+<!-- CARD 3 -->
+<div class="swiper-slide">
+    <div class="home-product-card">
+        <picture>
+            <source media="(max-width:768px)" srcset="images/wire-mobile.webp">
+            <img src="images/wire.webp"
+                 alt="Industrial Wires & Cables"
+                 loading="lazy"
+                 width="400"
+                 height="300">
+        </picture>
+        <div class="card-body text-center">
+            <h5>Wires & Cables</h5>
+            <a href="wiresncable.html" class="product-btn">
                 View More
-              </a>
-            </div>
-          </div>
+            </a>
         </div>
+    </div>
+</div>
 
-        <!-- CARD 4 -->
-        <div class="swiper-slide">
-          <div class="home-product-card">
-            <img src="images/hydraulic-press.webp" alt="" loading="lazy"
-      width="400"
-      height="300">
-            <div class="card-body text-center">
-              <h5>Hydraulic Equipments</h5>
-              <a href="hydraulic.html" class="product-btn">
+<!-- CARD 4 -->
+<div class="swiper-slide">
+    <div class="home-product-card">
+        <picture>
+            <source media="(max-width:768px)" srcset="images/hydraulic-press-mobile.webp">
+            <img src="images/hydraulic-press.webp"
+                 alt="Hydraulic Equipment"
+                 loading="lazy"
+                 width="400"
+                 height="300">
+        </picture>
+        <div class="card-body text-center">
+            <h5>Hydraulic Equipments</h5>
+            <a href="hydraulic.html" class="product-btn">
                 View More
-              </a>
-            </div>
-          </div>
+            </a>
         </div>
+    </div>
+</div>
 
-        <!-- CARD 5-->
-        <div class="swiper-slide">
-          <div class="home-product-card">
-            <img src="images/measuring-testing-instruments.webp" alt="" loading="lazy"
-      width="400"
-      height="300">
-            <div class="card-body text-center">
-              <h5>Testing & Measuring Equipments</h5>
-              <a href="testing.html" class="product-btn">
+<!-- CARD 5 -->
+<div class="swiper-slide">
+    <div class="home-product-card">
+        <picture>
+            <source media="(max-width:768px)" srcset="images/measuring-testing-instruments-mobile.webp">
+            <img src="images/measuring-testing-instruments.webp"
+                 alt="Testing & Measuring Equipments"
+                 loading="lazy"
+                 width="400"
+                 height="300">
+        </picture>
+        <div class="card-body text-center">
+            <h5>Testing & Measuring Equipments</h5>
+            <a href="testing.html" class="product-btn">
                 View More
-              </a>
-            </div>
-          </div>
+            </a>
         </div>
+    </div>
+</div>
 
-        <!-- CARD 6 -->
-        <div class="swiper-slide">
-          <div class="home-product-card">
-            <img src="images/light.webp" alt="" loading="lazy"
-      width="400"
-      height="300">
-            <div class="card-body text-center">
-              <h5>Lighting Solutions</h5>
-              <a href="lighting.html" class="product-btn">
+<!-- CARD 6 -->
+<div class="swiper-slide">
+    <div class="home-product-card">
+        <picture>
+            <source media="(max-width:768px)" srcset="images/light-mobile.webp">
+            <img src="images/light.webp"
+                 alt="Lighting Solutions"
+                 loading="lazy"
+                 width="400"
+                 height="300">
+        </picture>
+        <div class="card-body text-center">
+            <h5>Lighting Solutions</h5>
+            <a href="lighting.html" class="product-btn">
                 View More
-              </a>
-            </div>
-          </div>
+            </a>
         </div>
+    </div>
+</div>
+
+
+
       </div>
       <!-- Arrows -->
       <div class="swiper-button-next"></div>
@@ -395,117 +437,151 @@ in Jaipur, providing MCCB, ACB, switchgear, power distribution, automation and i
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/JSW.webp" alt="JSW">
+                    <img src="images/JSW.webp" alt="JSW"  loading="lazy"
+     width="180"
+     height="100">
                 </div>
                 <p>JSW</p>
             </div>
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/shree.webp" alt="shreecement">
+                    <img src="images/shree.webp" alt="shreecement" loading="lazy"
+     width="180"
+     height="100">
                 </div>
                 <p>Shree Cement</p>
             </div>
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/ultratechh.webp" alt="ultratech">
+                    <img src="images/ultratechh.webp" alt="ultratech" loading="lazy"
+     width="180"
+     height="100">
                 </div>
                 <p>Ultratech</p>
             </div>
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/aditya_birla.webp" alt="adtiya birla">
+                    <img src="images/aditya_birla.webp" alt="adtiya birla" loading="lazy"
+     width="180"
+     height="100">
                 </div>
                 <p>Aditya Birla</p>
             </div>
             
              <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/dalmia.webp" alt="Dalmia">
+                    <img src="images/dalmia.webp" alt="Dalmia" loading="lazy"
+     width="180"
+     height="100">
                 </div>
                 <p>Dalmia</p>
             </div>
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/moglix.webp" alt="moglix">
+                    <img src="images/moglix.webp" alt="moglix" loading="lazy"
+     width="180"
+     height="100">
                 </div>
                 <p>Moglix</p>
             </div>
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/vedanta.webp" alt="vedanta">
+                    <img src="images/vedanta.webp" alt="vedanta" loading="lazy"
+     width="180"
+     height="100">
                 </div>
                 <p>Vedanta</p>
             </div>
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/bps.webp" alt="BPS">
+                    <img src="images/bps.webp" alt="BPS" loading="lazy"
+     width="180"
+     height="100">
                 </div>
                 <p>Bhusan Power & Steel</p>
             </div>
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/century-pulp-paper-logo.webp" alt="century">
+                    <img src="images/century-pulp-paper-logo.webp" alt="century" loading="lazy"
+     width="180"
+     height="100">
                 </div>
                 <p>Century Pulp & Paper</p>
             </div>
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/dmart.webp" alt="DMart">
+                    <img src="images/dmart.webp" alt="DMart" loading="lazy"
+     width="180"
+     height="100">
                 </div>
                 <p>DMart</p>
             </div>
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/Hindustan-Copper-Limited-Logo.webp" alt="hindustan copper">
+                    <img src="images/Hindustan-Copper-Limited-Logo.webp" alt="hindustan copper" loading="lazy"
+     width="180"
+     height="100">
                 </div>
                 <p>Hindustan Copper Limited</p>
             </div>
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/tspl.webp" alt="tspl">
+                    <img src="images/tspl.webp" alt="tspl" loading="lazy"
+     width="180"
+     height="100">
                 </div>
                 <p>TSPL</p>
             </div>
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/bkt.webp" alt="bkt">
+                    <img src="images/bkt.webp" alt="bkt" loading="lazy"
+     width="180"
+     height="100">
                 </div>
                 <p>BKT Tyres</p>
             </div>
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/power_mech.webp" alt="power mech">
+                    <img src="images/power_mech.webp" alt="power mech" loading="lazy"
+     width="180"
+     height="100">
                 </div>
                 <p>Power Mech</p>
             </div>
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/sael.webp" alt="seal">
+                    <img src="images/sael.webp" alt="seal" loading="lazy"
+     width="180"
+     height="100">
                 </div>
                 <p>Seal</p>
             </div>
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/seetkamal.webp" alt="seetkamal">
+                    <img src="images/seetkamal.webp" alt="seetkamal" loading="lazy"
+     width="180"
+     height="100">
                 </div>
                 <p>Seetkamal</p>
             </div>
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/swml.webp" alt="swml">
+                    <img src="images/swml.webp" alt="swml" loading="lazy"
+     width="180"
+     height="100">
                 </div>
                 <p>Swml</p>
             </div>
@@ -717,18 +793,7 @@ in Jaipur, providing MCCB, ACB, switchgear, power distribution, automation and i
 
 </footer>
 <!-- STICKY QUERY BUTTON -->
-
-<div class="query-tab" onclick="openQueryForm()">
-
-    <span>Any Query</span>
-
-    <i class="fas fa-comments"></i>
-
-</div>
-
-
-<!-- QUERY POPUP -->
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <!-- QUERY TAB -->
 
 <div class="query-tab" onclick="openQueryForm()">
@@ -789,8 +854,7 @@ in Jaipur, providing MCCB, ACB, switchgear, power distribution, automation and i
 </div>
 
 <!-- EmailJS -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
+<script defer src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script>
 (function(){
     emailjs.init("YgQhE2D0Y6JgurC04");
@@ -812,12 +876,13 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
 
     <!-- Call Button -->
     <a href="tel:7300161962" class="call-float">
-        <i class="bi bi-telephone-fill"></i>
+        <i class="fa-solid fa-phone"></i>
+
     </a>
 
     <!-- WhatsApp Button -->
     <a href="https://wa.me/7300161962" class="whatsapp-float" target="_blank">
-        <i class="bi bi-whatsapp"></i>
+        <i class="fa-brands fa-whatsapp"></i>
     </a>
 
 </div>
@@ -866,18 +931,6 @@ showSlide(index);
 
 </script>
 <script>
-
-function openQueryForm() {
-    document.getElementById("queryPopup").style.display = "flex";
-}
-
-function closeQueryForm() {
-    document.getElementById("queryPopup").style.display = "none";
-}
-
-</script>
-<script>
-
 /* popup open */
 
 function openQueryForm() {
@@ -989,8 +1042,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 </script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
+
 document.addEventListener("DOMContentLoaded", function () {
 
     const schneiderBtn =
