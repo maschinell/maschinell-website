@@ -6,7 +6,7 @@ const sSeries = [
 {
     name:"Daylight Sensors",
 
-    image:"images/light-daylight.jpeg",
+    image:"images/light-daylight.webp",
 
     description:
     "Daylight sensors designed to automatically adjust artificial lighting levels based on available natural daylight, improving comfort and energy efficiency.",

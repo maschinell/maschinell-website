@@ -35,7 +35,7 @@ const sSeries = [
 {
     name:"Unica Sockets",
 
-    image:"images/unica-sockets.jpeg",
+    image:"images/unica-sockets.webp",
 
     description:
     "Elegant and reliable socket solutions for modern electrical installations.",

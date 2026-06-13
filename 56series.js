@@ -93,7 +93,7 @@ const sSeries = [
 {
     name:"56 Series Weatherproof Electrical Solutions",
 
-    image:"images/56series-weatherproof.jpeg",
+    image:"images/56series-weatherproof.webp",
 
     description:
     "Comprehensive weatherproof industrial electrical solutions designed for outdoor and harsh environmental applications.",

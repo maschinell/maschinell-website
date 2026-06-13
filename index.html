@@ -45,7 +45,8 @@ in Jaipur, providing MCCB, ACB, switchgear, power distribution, automation and i
       <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="style.css" as="style">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <!-- 🔥 UPDATED NAVBAR -->
@@ -216,24 +217,48 @@ in Jaipur, providing MCCB, ACB, switchgear, power distribution, automation and i
 
             <!-- Slide 1 -->
             <div class="slide active">
-                <img src="images/hero1.webp" alt="Schnider">
+                <img src="images/hero1.webp" alt="Schnider" width="1200"
+        height="700"
+        fetchpriority="high"
+        loading="eager">>
             </div>
 
-            <!-- Slide 2 -->
-            <div class="slide">
-                <img src="images/hero3.webp" alt="2nd">
-            </div>
+           <!-- Slide 1 -->
+<div class="slide active">
+    <img src="images/hero1.webp"
+         alt="Schneider"
+         width="1200"
+         height="700"
+         fetchpriority="high"
+         loading="eager">
+</div>
 
-            <!-- Slide 3 -->
-            <div class="slide">
-                <img src="images/hero2.webp" alt="3rd">
-            </div>
+<!-- Slide 2 -->
+<div class="slide">
+    <img src="images/hero3.webp"
+         alt="2nd"
+         width="1200"
+         height="700"
+         loading="lazy">
+</div>
 
-            <!-- Slide 4 -->
-            <div class="slide">
-                <img src="images/hero4.webp" alt="last">
-            </div>
+<!-- Slide 3 -->
+<div class="slide">
+    <img src="images/hero2.webp"
+         alt="3rd"
+         width="1200"
+         height="700"
+         loading="lazy">
+</div>
 
+<!-- Slide 4 -->
+<div class="slide">
+    <img src="images/hero4.webp"
+         alt="last"
+         width="1200"
+         height="700"
+         loading="lazy">
+</div>
             <!-- Buttons -->
             <button class="prev" onclick="prevSlide()">❮</button>
             <button class="next" onclick="nextSlide()">❯</button>
@@ -267,7 +292,9 @@ in Jaipur, providing MCCB, ACB, switchgear, power distribution, automation and i
         <!-- CARD 1 -->
         <div class="swiper-slide">
           <div class="home-product-card">
-            <img src="images/electrical_pannel.webp" alt="">
+            <img src="images/electrical_pannel.webp" alt="" loading="lazy"
+      width="400"
+      height="300">
             <div class="card-body text-center">
               <h5>Electrical Panels</h5>
               <a href="electrical_pannel.html" class="product-btn">
@@ -280,7 +307,9 @@ in Jaipur, providing MCCB, ACB, switchgear, power distribution, automation and i
         <!-- CARD 2 -->
         <div class="swiper-slide">
           <div class="home-product-card">
-            <img src="images/Electrical-Switchgear.webp" alt="">
+            <img src="images/Electrical-Switchgear.webp" alt="" loading="lazy"
+      width="400"
+      height="300">
             <div class="card-body text-center">
               <h5>Switchgear</h5>
               <a href="switchgear.html" class="product-btn">
@@ -293,7 +322,9 @@ in Jaipur, providing MCCB, ACB, switchgear, power distribution, automation and i
         <!-- CARD 3 -->
         <div class="swiper-slide">
           <div class="home-product-card">
-            <img src="images/wire.webp" alt="">
+            <img src="images/wire.webp" alt="" loading="lazy"
+      width="400"
+      height="300">
             <div class="card-body text-center">
               <h5>Wires & Cables</h5>
               <a href="wiresncable.html" class="product-btn">
@@ -306,7 +337,9 @@ in Jaipur, providing MCCB, ACB, switchgear, power distribution, automation and i
         <!-- CARD 4 -->
         <div class="swiper-slide">
           <div class="home-product-card">
-            <img src="images/hydraulic-press.avif" alt="">
+            <img src="images/hydraulic-press.webp" alt="" loading="lazy"
+      width="400"
+      height="300">
             <div class="card-body text-center">
               <h5>Hydraulic Equipments</h5>
               <a href="hydraulic.html" class="product-btn">
@@ -319,7 +352,9 @@ in Jaipur, providing MCCB, ACB, switchgear, power distribution, automation and i
         <!-- CARD 5-->
         <div class="swiper-slide">
           <div class="home-product-card">
-            <img src="images/measuring-testing-instruments.webp" alt="">
+            <img src="images/measuring-testing-instruments.webp" alt="" loading="lazy"
+      width="400"
+      height="300">
             <div class="card-body text-center">
               <h5>Testing & Measuring Equipments</h5>
               <a href="testing.html" class="product-btn">
@@ -332,7 +367,9 @@ in Jaipur, providing MCCB, ACB, switchgear, power distribution, automation and i
         <!-- CARD 6 -->
         <div class="swiper-slide">
           <div class="home-product-card">
-            <img src="images/light.jpeg" alt="">
+            <img src="images/light.webp" alt="" loading="lazy"
+      width="400"
+      height="300">
             <div class="card-body text-center">
               <h5>Lighting Solutions</h5>
               <a href="lighting.html" class="product-btn">
@@ -400,7 +437,7 @@ in Jaipur, providing MCCB, ACB, switchgear, power distribution, automation and i
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/vedanta.jpeg" alt="vedanta">
+                    <img src="images/vedanta.webp" alt="vedanta">
                 </div>
                 <p>Vedanta</p>
             </div>
@@ -427,14 +464,14 @@ in Jaipur, providing MCCB, ACB, switchgear, power distribution, automation and i
             </div>
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/Hindustan-Copper-Limited-Logo.avif" alt="hindustan copper">
+                    <img src="images/Hindustan-Copper-Limited-Logo.webp" alt="hindustan copper">
                 </div>
                 <p>Hindustan Copper Limited</p>
             </div>
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/tspl.jpeg" alt="tspl">
+                    <img src="images/tspl.webp" alt="tspl">
                 </div>
                 <p>TSPL</p>
             </div>
@@ -448,7 +485,7 @@ in Jaipur, providing MCCB, ACB, switchgear, power distribution, automation and i
 
             <div class="col-6 col-md-2 custom-5">
                 <div class="client-box">
-                    <img src="images/power_mech.jpeg" alt="power mech">
+                    <img src="images/power_mech.webp" alt="power mech">
                 </div>
                 <p>Power Mech</p>
             </div>
@@ -902,7 +939,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         centeredSlides: false,
 
-        slidesPerView: 4,
+        slidesPerView: 3,
 
         spaceBetween: 25,
 
@@ -942,7 +979,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             1200: {
 
-                slidesPerView: 4,
+                slidesPerView: 3,
 
                 spaceBetween: 25,
             }

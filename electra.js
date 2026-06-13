@@ -6,7 +6,7 @@ const sSeries = [
 {
     name:"Electra Metal Clad Switches",
 
-    image:"images/electra-switches.avif",
+    image:"images/electra-switches.webp",
 
     description:
     "Heavy-duty metal clad switches designed for reliable operation and enhanced protection in industrial and commercial environments.",
